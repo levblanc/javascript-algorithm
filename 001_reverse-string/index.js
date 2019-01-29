@@ -6,6 +6,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+// Solution #1
 // function reverse(str) {
 //   let tmp = []
 //   const strlen = str.length
@@ -17,6 +18,7 @@
 //   return tmp.join('')
 // }
 
+// Solution #2
 // function reverse(str) {
 //   let tmp = ''
 //   const strlen = str.length
@@ -28,6 +30,7 @@
 //   return tmp
 // }
 
+// Solution #3
 // function reverse(str) {
 //   const strlen = str.length
 //   let tmp = ''
@@ -39,10 +42,12 @@
 //   return tmp
 // }
 
-// function reverse(str) {
-//   return str.split('').reverse().join('')
-// }
+// Solution #4
+function reverse(str) {
+  return str.split('').reverse().join('')
+}
 
+// Solution #5
 // function reverse(str) {
 //   let reversed = ''
 
@@ -53,8 +58,9 @@
 //   return reversed
 // }
 
-function reverse(str) {
-  return str.split('').reduce((rev, char) => char + rev, '')
-}
+// Solution #6
+// function reverse(str) {
+//   return str.split('').reduce((rev, char) => char + rev, '')
+// }
 
 module.exports = reverse;
